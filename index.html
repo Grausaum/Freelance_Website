@@ -57,9 +57,24 @@
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
         }
+        .portrait-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .portrait {
             width: 300px;
             border-radius: 50%;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-icons a img {
+            width: 40px;
+            height: 40px;
         }
         h1 {
             font-size: 3rem;
@@ -122,7 +137,14 @@
     </div>
     
     <section id="about" class="about-container">
-        <img src="Business_Portrait.JPG" alt="Dennis Stamm Portrait" class="portrait">
+        <div class="portrait-container">
+            <img src="Business_Portrait.jpg" alt="Dennis Stamm Portrait" class="portrait">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/dennis-stamm-889958bb/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:dennis@stamm.es"><img src="outlook.png" alt="Outlook"></a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=dennis@stamm.es" target="_blank"><img src="teams.png" alt="Microsoft Teams"></a>
+            </div>
+        </div>
         <div class="about-text">
             <h1>Dennis Stamm</h1>
             <h2>IT Strategy & Digital Transformation</h2>
@@ -144,16 +166,24 @@
         </ul>
     </section>
 
+      <section id="projects" class="projects">
+        <h2>Projektliste (Auszug)</h2>
+        <div class="project-list">
+            <div class="project-item">Projekt 1: ERP-Systemdigitalisierung</div>
+            <div class="project-item">Projekt 2: Cloud-Migration & Infrastruktur</div>
+            <div class="project-item">Projekt 3: IT-Transformationsstrategie</div>
+        </div>
+    </section>
+  
     <section id="contact" class="contact">
         <h2>Kontakt</h2>
-        <p>Interessiert an einer Zusammenarbeit? Kontaktieren Sie mich:</p>
         <ul>
-            <li><a href="mailto:dennis@stamm.es">E-Mail</a></li>
-            <li><a href="https://www.linkedin.com/in/dennis-stamm-889958bb/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://teams.microsoft.com/l/chat/0/0?users=dennis@stamm.es" target="_blank">Chat with me in Teams</a></li>
+            <li>Email: <a href="mailto:dennis@stamm.es">dennis@stamm.es</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/dennis-stamm-889958bb/" target="_blank">Mein LinkedIn Profil</a></li>
+            <li>Microsoft Teams: <a href="https://teams.microsoft.com/l/chat/0/0?users=dennis@stamm.es" target="_blank">Chat mit mir in Teams</a></li>
         </ul>
     </section>
-
+  
     <footer>
         <p>&copy; 2025 Dennis Stamm - IT Strategy & Digital Transformation</p>
         <div class="footer-links">
