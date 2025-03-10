@@ -113,29 +113,45 @@
             padding: 50px 10%;
             text-align: center;
         }
+		
         .project-list {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .project-item {
-            background: #222;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            width: 250px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .project-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+		.project-item {
+			background: #222;
+			padding: 20px;
+			border-radius: 8px;
+			font-size: 1.2rem;
+			width: 250px; /* Alle Kacheln gleich breit */
+			text-align: left; /* Text linksbündig */
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start; /* Verhindert zentrierte Texte */
+		}
+
+		.project-item img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			margin-bottom: 10px;
+		}
+
+		.project-item h3 {
+			font-weight: bold;
+			margin: 10px 0 5px; /* Abstand zum Bild & zur Beschreibung */
+			text-align: left;
+			width: 100%;
+		}
+
+		.project-item p {
+			text-align: left;
+			margin: 0;
+			width: 100%;
+		}
+
         footer {
             padding: 20px;
             background-color: #1f1f1f;
@@ -199,18 +215,22 @@
         <div class="project-list">
             <div class="project-item">
                 <img src="projekt1.jpg" alt="XRM (ERP/CRM) Einführung">
+				<h3>XRM (ERP/CRM) Einführung</h3>
                 <p>Analyse aller relevanten Prozesse und ableiten einer neuen Systemumgebung für die zentralen ERP und CRM Prozesse.</p>
             </div>
             <div class="project-item">
                 <img src="projekt2.jpg" alt="IT Modernisierung">
+				<h3>IT Modernisierung</h3>
                 <p>Cloud-Migration & Infrastruktur erneuerung für einen Maschinenbauer auf Basis von Microsoft 365 und Azure, Aufbau einer dezentralen SAP Ansatzes mit Datensychronisation</p>
             </div>
             <div class="project-item">
                 <img src="projekt3.jpg" alt="IT-Transformationsstrategie">
+				<h3>IT-Transformationsstrategie</h3>
                 <p>Aufbau einer Unternehmensweiten IT und Digitalstrategie inkl. Gesamtverantwortung für die Umsetzung dieser</p>
             </div>
 			<div class="project-item">
                 <img src="projekt4.jpg" alt="Digitale Produktentwicklung">
+				<h3>Digitale Produktentwicklung</h3>
                 <p>Umbau eines bisherigen Cost-Centers in ein Profit Center mit gleichzeitgem Effizienz Gewinn und höherer Kundenzufreidenheit</p>
             </div>
         </div>
